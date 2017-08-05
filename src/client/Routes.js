@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, IndexRedirect } from 'react-router'
+import { Router, Route } from 'react-router'
 import createBrowserHistory from 'history/createBrowserHistory'
 import RouterStore from 'stores/RouterStore'
 import App from 'views/App'

@@ -15,7 +15,7 @@ let conf = {
     './src/client/index.js'
   ],
   module: {
-    rules: [ 
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -29,15 +29,15 @@ let conf = {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [
-          { loader: "style-loader" },
+          { loader: 'style-loader' },
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: true,
               localIdentName: prod ? '[hash:base64]' : '[local]-[hash:base64:5]'
             }
           },
-          { loader: "sass-loader" }
+          { loader: 'sass-loader' }
         ]
       }
     ]
