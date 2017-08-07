@@ -39,11 +39,16 @@ let conf = {
           },
           { loader: 'sass-loader' }
         ]
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   },
   resolve: {
     modules: [
+      path.resolve('./src'),
       path.resolve('./src/client'),
       path.resolve('./node_modules')
     ]

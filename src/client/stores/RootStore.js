@@ -1,7 +1,7 @@
 import { observable } from 'mobx'
 
 class RootStore {
-  @observable message = '(: Helloooooooooo :)'
+  @observable showMessage = true
 }
 
 export default new RootStore()
